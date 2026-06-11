@@ -1,0 +1,22 @@
+info:
+  name: Request Device Code
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://login.microsoftonline.com/common/oauth2/v2.0/devicecode
+  body:
+    type: form-urlencoded
+    data:
+      - name: client_id
+        value: 537c9fd5-1887-4786-9fc2-05863149de86
+      - name: scope
+        value: https://api.powerplatform.com/.default offline_access
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

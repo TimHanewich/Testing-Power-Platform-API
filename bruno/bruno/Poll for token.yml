@@ -1,0 +1,24 @@
+info:
+  name: Poll for token
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://login.microsoftonline.com/common/oauth2/v2.0/token
+  body:
+    type: form-urlencoded
+    data:
+      - name: grant_type
+        value: urn:ietf:params:oauth:grant-type:device_code
+      - name: client_id
+        value: 537c9fd5-1887-4786-9fc2-05863149de86
+      - name: device_code
+        value: FBgABIQEAAAAdDD7nC9b5Q7JPd_okEQRFRXZvU3RzQXJ0aWZhY3RzAQAAAAAAnkUbSuS6paRl3uHrD-8zaAyrkLd4H_ZPAQ7k8A80VWpf4zlmg5nWHgtFA-0K5Qn3ENz-pTNmcIPrReqivOrW-MOiThSGow8eqbXJb2q0IQdhSWsvCf-Ver3iWQk0b30Zk_EkUNtcgdnmGu1mHIMgflsAUIb_0LkkHsm-WFP_H7VsgLjxtKPfG1dYMYR0inddyXze_uofHGqTIKzlHlOL_qIx6SI44n6gHK7D5oLeA4k1B72Demha6WanINvZmY6AhP6BYnlOL0TvzoMcgB2IQcr-88lEOQqtLGvjlRcPWGsXqUO8MUpMco_7nEhqvuLp33QF-KrqzaeEDCsLoKV0XildTkfTGaCkAH4_Qnhb34ZpIn8psRJiZc6SW5fzNXGrsK4tdSQeJGY3Sw2I1ijl9JSguSaUnn8-Ytlx-qzmcj3kQGDox47XxQ9Nf8ZH8piL0J1HQg6fOUeg8E31skmUviQJ_EDO_uZsaudFn8FuIWaVePbE3vuiJ0Ou00GN3nc850ab1M0mnxhS2xF2G-8NzAdwJ18Xf4so-GFyyzltF_-FG7eZTOGffm0CRL6o4aQtVl3k4ruYcS2Ha3RPgu3RNiYJd0KTUkbvPW7-7wLeu8q53S8xk8PGsbopUyuMRPRTz0K77LMy3gM8OACZ55-wYRWVevf33iKona6FXMjpHCVRdYCIdymmj4Gn7hy6GSSEeTs78qiAS-azsbvW764v3kG2nHPPglvj0z0utjdlZTUgAA
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
