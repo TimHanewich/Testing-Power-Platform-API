@@ -1,4 +1,4 @@
-# Testign the Power Platform API
+# Testing the Power Platform API
 The code in [Program.cs](./src/Program.cs) demonstrates basic authroization functionality to access the Power Platform APIs. It follows these steps:
 
 1. Request a device code from Microsoft
