@@ -1,4 +1,10 @@
+# Testign the Power Platform API
+The code in [Program.cs](./src/Program.cs) demonstrates basic authroization functionality to access the Power Platform APIs. It follows these steps:
 
+1. Request a device code from Microsoft
+2. Provide that device code to the user, ask them to login
+3. After they do, request the access (bearer) token from Microsoft
+4. Get that token, make API calls to the Power Platform API
 
 
 ## How to
