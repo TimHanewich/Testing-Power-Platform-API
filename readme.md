@@ -2,19 +2,17 @@
 
 
 ## How to
+
+### Set up App Registration in Azure
 Allow Public client flows which allows use of the "Device Code" authorization:
 ![allow public client flows](https://i.imgur.com/NS5S5iU.png)
 
 Add api.powerplatform.com as a permission for this client:
 ![add PowerApps Service to permissions = "api.powerplatform.com"](https://i.imgur.com/ZCFEWbR.png)
 
-Add `user_impersonation` as a permission for this client. This will late be needed to be able to query data in the dataverse environment the user selects.
-![add user_impersination for Common Data Service (Dataverse)](https://i.imgur.com/X7hikDX.png)
-
 Details in my example:
-Tenant ID: `1a70d84e-bde9-4a11-ba5d-1305bb72ccb4`
-Client ID: `537c9fd5-1887-4786-9fc2-05863149de86`
-
+- Tenant ID: `1a70d84e-bde9-4a11-ba5d-1305bb72ccb4`
+- Client ID: `537c9fd5-1887-4786-9fc2-05863149de86`
 
 ### Get Device Code
 ```
